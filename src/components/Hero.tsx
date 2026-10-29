@@ -70,7 +70,7 @@ export const Hero: React.FC = () => {
             Pide tu fecha
           </a>
           <a
-            href="#videos"
+            href="#galeria"
             className="border border-white/20 hover:border-white/50 bg-white/5 backdrop-blur-md text-white text-[14px] sm:text-[15px] font-semibold px-7 sm:px-8 py-3 rounded-full hover:bg-white/10 hover:scale-105 active:scale-[0.97] transition-all duration-200 ease-out inline-flex items-center justify-center cursor-pointer tracking-wider uppercase"
           >
             Ver en directo

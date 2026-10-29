@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import StatsMarquee from "@/components/StatsMarquee";
 import TourDates from "@/components/TourDates";
 import Stats from "@/components/Stats";
-import Videos from "@/components/Videos";
 import Gallery from "@/components/Gallery";
 import About from "@/components/About";
 import Universe from "@/components/Universe";
@@ -32,10 +31,7 @@ export default function HomePage() {
       {/* 3.5 Cifras & Métricas */}
       <Stats />
 
-      {/* 3.6 Vídeos en Directo & Virales (#videos) */}
-      <Videos />
-
-      {/* 3.7 Galería de Directos (4 Fotos de Escenario) (#galeria) */}
+      {/* 3.6 Galería de Directos (4 Fotos de Escenario) (#galeria) */}
       <Gallery />
 
       {/* 3.8 Sobre TOTOTE (#sobre) */}
