@@ -377,6 +377,7 @@ export const siteConfig = {
       title: "DJ TOTOTE — Live Set Oficial",
       category: "SET EN DIRECTO",
       url: "https://youtu.be/0ygdwLnnlRA",
+      coverImage: "/media/youtube-set-1-hd.jpg",
       description: "Sesión completa con la mejor selección de reguetón, dembow y música urbana para romper la pista.",
     },
     {
@@ -384,6 +385,7 @@ export const siteConfig = {
       title: "DJ TOTOTE — Live Session Festival",
       category: "FESTIVAL SET",
       url: "https://youtu.be/pIjQRQ3xe6s",
+      coverImage: "/media/youtube-set-2-hd.jpg",
       description: "Pura energía de directo: drops contundentes, mezclas dinámicas y ambiente de festival al máximo nivel.",
     },
   ],

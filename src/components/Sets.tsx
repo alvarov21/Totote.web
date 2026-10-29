@@ -8,9 +8,10 @@ import siteConfig from "@/content/site";
 interface YouTubeFacadeProps {
   id: string;
   title: string;
+  coverImage?: string;
 }
 
-const YouTubeFacade: React.FC<YouTubeFacadeProps> = ({ id, title }) => {
+const YouTubeFacade: React.FC<YouTubeFacadeProps> = ({ id, title, coverImage }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   if (isPlaying) {
@@ -25,7 +26,8 @@ const YouTubeFacade: React.FC<YouTubeFacadeProps> = ({ id, title }) => {
     );
   }
 
-  const thumbnailUrl = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+  // Máxima resolución HD: archivo local HD o maxresdefault oficial de YouTube (1280x720)
+  const thumbnailUrl = coverImage || `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
 
   return (
     <div
@@ -45,7 +47,8 @@ const YouTubeFacade: React.FC<YouTubeFacadeProps> = ({ id, title }) => {
         src={thumbnailUrl}
         alt={title}
         fill
-        sizes="(max-width: 768px) 100vw, 1024px"
+        quality={95}
+        sizes="(max-width: 768px) 100vw, 1280px"
         className="object-cover transition-transform duration-700 ease-out group-hover:scale-105 will-change-transform"
       />
 
@@ -97,7 +100,11 @@ export const Sets: React.FC = () => {
             >
               {/* 16:9 Widescreen Container */}
               <div className="relative w-full aspect-video rounded-[16px] sm:rounded-[20px] overflow-hidden bg-black">
-                <YouTubeFacade id={video.id} title={video.title} />
+                <YouTubeFacade
+                  id={video.id}
+                  title={video.title}
+                  coverImage={video.coverImage}
+                />
               </div>
 
               {/* Set Info Row */}
