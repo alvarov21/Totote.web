@@ -1,11 +1,8 @@
-<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FFFFFF"/>
-        <stop offset="100%" stop-color="#00FF66"/>
-      </linearGradient>
-    </defs>
-    <rect width="64" height="64" rx="14" fill="#050507" />
-    <rect width="60" height="60" x="2" y="2" rx="12" fill="none" stroke="#00FF66" stroke-width="1.5" opacity="0.6"/>
-    <text x="32" y="47" text-anchor="middle" font-family="'Unbounded', 'Syne', sans-serif" font-weight="900" font-size="38" fill="url(#favGrad)">T</text>
-  </svg>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo negro festival con acabado redondeado -->
+  <rect width="64" height="64" rx="16" fill="#050507" />
+  <rect x="2" y="2" width="60" height="60" rx="14" stroke="#00FF66" stroke-width="2" stroke-opacity="0.45" />
+  
+  <!-- Monograma T en Verde Neón Puro (#00FF66) -->
+  <path d="M14 18C14 16.3431 15.3431 15 17 15H47C48.6569 15 50 16.3431 50 18V23C50 24.6569 48.6569 26 47 26H38V47C38 48.6569 36.6569 50 35 50H29C27.3431 50 26 48.6569 26 47V26H17C15.3431 26 14 24.6569 14 23V18Z" fill="#00FF66"/>
+</svg>
