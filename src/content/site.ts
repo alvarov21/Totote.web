@@ -466,9 +466,9 @@ export const siteConfig = {
       id: "brandy_ttt",
       title: "BRANDY TTT",
       handle: "@brandy_ttt",
-      badge: "STREETWEAR & BRAND",
+      badge: "EVENTO & FIESTA PROPIA",
       description:
-        "Línea de moda y streetwear urbano con el ADN de la calle y el festival. Diseños exclusivos y drops de edición limitada.",
+        "El evento propio creado, organizado y producido 100% por TOTOTE. Una fiesta con concepto temático exclusivo, puesta en escena de festival, shows en vivo y toda la energía de su universo en una sola noche.",
       link: "https://www.instagram.com/brandy_ttt/",
       accent: "fire",
     },

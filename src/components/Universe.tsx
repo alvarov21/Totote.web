@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { ArrowUpRight, Sparkles, Users, Shirt } from "lucide-react";
+import { ArrowUpRight, Sparkles, Users, Flame } from "lucide-react";
 import siteConfig from "@/content/site";
 
 export const Universe: React.FC = () => {
@@ -78,8 +78,8 @@ export const Universe: React.FC = () => {
 
                 {!isTotoneta && !isFriends && (
                   <div className="mt-8 pt-4 border-t border-white/10 flex items-center gap-3 text-xs text-white/70 font-ui">
-                    <Shirt className="w-4 h-4 text-[#00FF66]" />
-                    <span>Colecciones streetwear & drop cápsula</span>
+                    <Flame className="w-4 h-4 text-[#00FF66]" />
+                    <span>Fiesta propia · Show completo y producción de autor</span>
                   </div>
                 )}
               </a>
