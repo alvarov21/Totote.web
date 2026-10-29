@@ -370,6 +370,24 @@ export const siteConfig = {
     },
   ] as VideoItem[],
 
+  // Sets y Sesiones en YouTube (Widescreen HD)
+  youtubeSets: [
+    {
+      id: "0ygdwLnnlRA",
+      title: "DJ TOTOTE — Live Set Oficial",
+      category: "SET EN DIRECTO",
+      url: "https://youtu.be/0ygdwLnnlRA",
+      description: "Sesión completa con la mejor selección de reguetón, dembow y música urbana para romper la pista.",
+    },
+    {
+      id: "pIjQRQ3xe6s",
+      title: "DJ TOTOTE — Live Session Festival",
+      category: "FESTIVAL SET",
+      url: "https://youtu.be/pIjQRQ3xe6s",
+      description: "Pura energía de directo: drops contundentes, mezclas dinámicas y ambiente de festival al máximo nivel.",
+    },
+  ],
+
   // Galería de Escenario (4 Fotos Oficiales en Directo)
   gallery: [
     {

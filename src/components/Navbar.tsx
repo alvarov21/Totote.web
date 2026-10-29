@@ -43,6 +43,7 @@ export const Navbar: React.FC = () => {
 
   const navLinks = [
     { label: "FECHAS", href: "#fechas" },
+    { label: "SETS", href: "#sets" },
     { label: "GALERÍA", href: "#galeria" },
     { label: "SOBRE", href: "#sobre" },
     { label: "PRESSKIT", href: "#presskit" },

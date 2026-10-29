@@ -124,9 +124,11 @@ export default function RootLayout({
         {/* Robots meta tag for demo safeguard */}
         <meta name="robots" content="noindex, nofollow" />
         
-        {/* Google Fonts preconnect */}
+        {/* CDN Preconnects */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://i.ytimg.com" />
+        <link rel="preconnect" href="https://img.youtube.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;700;800;900&family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap"
           rel="stylesheet"
