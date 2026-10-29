@@ -1,0 +1,56 @@
+const fs = require('fs');
+const path = require('path');
+const sharp = require('sharp');
+
+const PUBLIC_DIR = path.join(__dirname, '../public');
+
+function generateUnboundedLogoSvg() {
+  return `
+  <svg width="440" height="110" viewBox="0 0 440 110" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="60%" stop-color="#E2E8F0" />
+        <stop offset="100%" stop-color="#00FF66" />
+      </linearGradient>
+      <filter id="logoGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#00FF66" flood-opacity="0.6"/>
+      </filter>
+    </defs>
+    <!-- Tactical Corner Marks -->
+    <path d="M14 26 L26 26 M14 26 L14 38" stroke="#00FF66" stroke-width="2.5" fill="none" />
+    <path d="M426 26 L414 26 M426 26 L426 38" stroke="#00FF66" stroke-width="2.5" fill="none" />
+
+    <!-- Main TOTOTE Typography (Wide, Brutalist, Urban Festival Font) -->
+    <text x="220" y="72" text-anchor="middle" font-family="'Unbounded', 'Syne', system-ui, sans-serif" font-weight="900" font-size="52" letter-spacing="-0.04em" fill="url(#logoGrad)" filter="url(#logoGlow)">TOTOTE</text>
+    
+    <!-- Subtitle pill -->
+    <text x="220" y="98" text-anchor="middle" font-family="'Bebas Neue', system-ui, sans-serif" font-weight="700" font-size="13" letter-spacing="0.32em" fill="#00FF66">SPAIN URBAN DJ · POSADAS</text>
+  </svg>
+  `;
+}
+
+function generateUnboundedFaviconSvg() {
+  return `
+  <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF"/>
+        <stop offset="100%" stop-color="#00FF66"/>
+      </linearGradient>
+    </defs>
+    <rect width="64" height="64" rx="14" fill="#050507" />
+    <rect width="60" height="60" x="2" y="2" rx="12" fill="none" stroke="#00FF66" stroke-width="1.5" opacity="0.6"/>
+    <text x="32" y="47" text-anchor="middle" font-family="'Unbounded', 'Syne', sans-serif" font-weight="900" font-size="38" fill="url(#favGrad)">T</text>
+  </svg>
+  `;
+}
+
+async function updateLogos() {
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'brand/logo-totote.svg'), generateUnboundedLogoSvg().trim());
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'brand/favicon.svg'), generateUnboundedFaviconSvg().trim());
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'favicon.ico'), await sharp(Buffer.from(generateUnboundedFaviconSvg().trim())).resize(32, 32).toFormat('png').toBuffer());
+  console.log('Unbounded logos & favicon updated!');
+}
+
+updateLogos().catch(console.error);
