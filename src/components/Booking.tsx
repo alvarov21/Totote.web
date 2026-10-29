@@ -22,8 +22,6 @@ export const Booking: React.FC = () => {
     telefono: "",
     fecha: "",
     ciudad: "",
-    tipoEvento: siteConfig.bookingOptions.eventTypes[0],
-    aforo: siteConfig.bookingOptions.capacities[1],
     mensaje: "",
     rgpd: false,
   });
@@ -151,8 +149,6 @@ export const Booking: React.FC = () => {
                       telefono: "",
                       fecha: "",
                       ciudad: "",
-                      tipoEvento: siteConfig.bookingOptions.eventTypes[0],
-                      aforo: siteConfig.bookingOptions.capacities[1],
                       mensaje: "",
                       rgpd: false,
                     });
@@ -270,44 +266,6 @@ export const Booking: React.FC = () => {
                       required
                       className="w-full px-3.5 py-2.5 rounded-xl bg-white/[0.03] border border-white/8 text-white placeholder-white/30 focus:outline-none focus:border-[#00FF66] transition-colors text-sm"
                     />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                  <div>
-                    <label className="block text-xs font-impact tracking-wider text-white/90 uppercase mb-1">
-                      Tipo de evento
-                    </label>
-                    <select
-                      name="tipoEvento"
-                      value={formData.tipoEvento}
-                      onChange={handleChange}
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-[#111318] border border-white/8 text-white focus:outline-none focus:border-[#00FF66] transition-colors text-sm"
-                    >
-                      {siteConfig.bookingOptions.eventTypes.map((type) => (
-                        <option key={type} value={type}>
-                          {type}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-impact tracking-wider text-white/90 uppercase mb-1">
-                      Aforo aproximado
-                    </label>
-                    <select
-                      name="aforo"
-                      value={formData.aforo}
-                      onChange={handleChange}
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-[#111318] border border-white/8 text-white focus:outline-none focus:border-[#00FF66] transition-colors text-sm"
-                    >
-                      {siteConfig.bookingOptions.capacities.map((cap) => (
-                        <option key={cap} value={cap}>
-                          {cap}
-                        </option>
-                      ))}
-                    </select>
                   </div>
                 </div>
 
