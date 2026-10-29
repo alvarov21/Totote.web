@@ -5,7 +5,6 @@ import StatsMarquee from "@/components/StatsMarquee";
 import TourDates from "@/components/TourDates";
 import Stats from "@/components/Stats";
 import Videos from "@/components/Videos";
-import Gallery from "@/components/Gallery";
 import About from "@/components/About";
 import Universe from "@/components/Universe";
 import Venues from "@/components/Venues";
@@ -34,25 +33,22 @@ export default function HomePage() {
       {/* 3.6 Vídeos en Directo & Virales (#videos) */}
       <Videos />
 
-      {/* 3.7 Galería de Escenario (Masonry + Lightbox) */}
-      <Gallery />
-
-      {/* 3.8 Sobre TOTOTE (#sobre) */}
+      {/* 3.7 Sobre TOTOTE (#sobre) */}
       <About />
 
-      {/* 3.9 Proyectos / Universo TOTOTE (Totoneta, Friends, Brandy) */}
+      {/* 3.8 Proyectos / Universo TOTOTE (Totoneta, Friends, Brandy) */}
       <Universe />
 
-      {/* 3.10 Han pinchado / Ha estado en (Festivales & Salas) */}
+      {/* 3.9 Han pinchado / Ha estado en (Festivales & Salas) */}
       <Venues />
 
-      {/* 3.11 Presskit & Rider Técnico (#presskit) */}
+      {/* 3.10 Presskit & Rider Técnico (#presskit) */}
       <Presskit />
 
-      {/* 3.12 Booking & Contratación Directa (#booking) */}
+      {/* 3.11 Booking & Contratación Directa (#booking) */}
       <Booking />
 
-      {/* 3.13 Giant Footer & Redes */}
+      {/* 3.12 Giant Footer & Redes */}
       <Footer />
     </main>
   );
