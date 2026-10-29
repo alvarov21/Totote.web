@@ -105,6 +105,13 @@ export const About: React.FC = () => {
               </div>
             </div>
 
+            {/* Quote badge */}
+            <div className="p-4 rounded-xl bg-white/[0.02] border-l-2 border-[#00FF66] mb-8">
+              <p className="font-display text-lg sm:text-xl text-white uppercase tracking-wide">
+                &ldquo;ASÍ SE TIENE QUE PONER DEMBOW EN LAS DISCOTECAS.&rdquo;
+              </p>
+            </div>
+
             {/* Action buttons */}
             <div className="flex flex-wrap items-center gap-4">
               <a
@@ -119,7 +126,7 @@ export const About: React.FC = () => {
                 href="#presskit"
                 className="btn-secondary-totote px-7 py-3.5 text-xl tracking-wider uppercase"
               >
-                VER PRESSKIT & RIDER
+                DESCARGAR PRESSKIT
               </a>
             </div>
           </div>
