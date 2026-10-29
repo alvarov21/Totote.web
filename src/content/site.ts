@@ -490,7 +490,7 @@ export const siteConfig = {
     { name: "FIESTAS PATRONALES POSADAS", city: "Córdoba", category: "Festival" },
   ] as VenueItem[],
 
-  // Presskit
+  // Presskit (Solo 2 tarjetas oficiales)
   presskit: {
     downloads: [
       {
@@ -509,49 +509,33 @@ export const siteConfig = {
         fileUrl: "/press/fotos.zip",
         description: "Pack oficial de fotografías para cartelería, redes y flyers en máxima resolución.",
       },
+    ] as PressItem[],
+  },
+
+  // Rider Técnico (Sección independiente con 2 tarjetas)
+  rider: {
+    cards: [
       {
-        id: "rider",
-        title: "Rider Técnico & Hospitalidad (PDF)",
+        id: "rider-doc",
+        title: "Rider Técnico & Iluminación (PDF)",
         format: "PDF",
         size: "2,8 MB",
         fileUrl: "/press/rider.pdf",
-        description: "Requisitos de cabina Pioneer, monitores, microfonía y condiciones técnicas de escenario.",
-      },
-    ] as PressItem[],
-
-    // Rider técnico resumido
-    riderSummary: [
-      {
-        item: "Reproductores",
-        specification: "2× Pioneer CDJ-3000 (o CDJ-2000NXS2)",
-        notes: "Conectados en red Pro DJ Link mediante Switch Ethernet de alta velocidad.",
+        badge: "DOCUMENTO OFICIAL",
+        description: "Requisitos técnicos completos de sonido, conexionado Pro DJ Link, canalizaciones y condiciones de escenario.",
+        actionText: "DESCARGAR RIDER PDF",
       },
       {
-        item: "Mesa de Mezclas",
-        specification: "1× Pioneer DJM-A9 o DJM-900NXS2",
-        notes: "Firmware actualizado y entradas con masa verificada.",
+        id: "rider-specs",
+        title: "Setup de Cabina Pioneer DJ",
+        format: "SETUP",
+        size: "ESTÁNDAR",
+        fileUrl: "/press/rider.pdf",
+        badge: "CONFIGURACIÓN MÍNIMA",
+        description: "2× Pioneer CDJ-3000 + 1× DJM-A9 / 900NXS2 + 2× Monitores de cabina estéreo de 1.000 W + Micro inalámbrico.",
+        actionText: "DESCARGAR RIDER PDF",
       },
-      {
-        item: "Monitorización",
-        specification: "2× Monitores de cabina estéreo independientes",
-        notes: "Mínimo 1.000 W RMS por lado, con control de volumen independiente accesible en cabina.",
-      },
-      {
-        item: "Microfonía",
-        specification: "1× Micrófono inalámbrico profesional",
-        notes: "Shure SM58 / Beta 58 o Sennheiser G4 con pilas nuevas para el set.",
-      },
-      {
-        item: "Cabina & Estructura",
-        specification: "Mesa rígida y estable a 100 cm de altura",
-        notes: "Aislada de subgraves y vibraciones mecánicas.",
-      },
-      {
-        item: "Efectos & Pirotecnia",
-        specification: "Cañones de CO2 y Chispas Frías (Opcional)",
-        notes: "Alineados con la dinámica de subidas y drops del set.",
-      },
-    ] as RiderSpec[],
+    ],
   },
 
   // Booking Form Options

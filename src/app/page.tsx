@@ -9,6 +9,7 @@ import About from "@/components/About";
 import Universe from "@/components/Universe";
 import Venues from "@/components/Venues";
 import Presskit from "@/components/Presskit";
+import Rider from "@/components/Rider";
 import Booking from "@/components/Booking";
 import Footer from "@/components/Footer";
 
@@ -42,10 +43,13 @@ export default function HomePage() {
       {/* 3.9 Han pinchado / Ha estado en (Festivales & Salas) */}
       <Venues />
 
-      {/* 3.10 Presskit & Rider Técnico (#presskit) */}
+      {/* 3.10 Presskit (#presskit) */}
       <Presskit />
 
-      {/* 3.11 Booking & Contratación Directa (#booking) */}
+      {/* 3.11 Rider Técnico (#rider) */}
+      <Rider />
+
+      {/* 3.12 Booking & Contratación Directa (#booking) */}
       <Booking />
 
       {/* 3.12 Giant Footer & Redes */}
