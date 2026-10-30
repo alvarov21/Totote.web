@@ -44,14 +44,17 @@ export const Footer: React.FC = () => {
             <a href="#fechas" className="text-xs sm:text-sm text-white/70 hover:text-[#00FF66] transition-colors">
               Próximas Fechas (Tour)
             </a>
-            <a href="#videos" className="text-xs sm:text-sm text-white/70 hover:text-[#00FF66] transition-colors">
-              Vídeos en Directo & Virales
+            <a href="#sets" className="text-xs sm:text-sm text-white/70 hover:text-[#00FF66] transition-colors">
+              Sets & Sesiones en Directo
+            </a>
+            <a href="#galeria" className="text-xs sm:text-sm text-white/70 hover:text-[#00FF66] transition-colors">
+              Galería de Directos
             </a>
             <a href="#sobre" className="text-xs sm:text-sm text-white/70 hover:text-[#00FF66] transition-colors">
               Sobre TOTOTE & Trayectoria
             </a>
             <a href="#presskit" className="text-xs sm:text-sm text-white/70 hover:text-[#00FF66] transition-colors">
-              Presskit & Rider Oficial
+              Presskit Oficial (Dossier PDF)
             </a>
             <a href="#booking" className="text-xs sm:text-sm font-bold text-[#00FF66] hover:underline transition-colors">
               Contratación & Booking

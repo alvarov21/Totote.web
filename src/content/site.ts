@@ -68,6 +68,21 @@ export interface PressItem {
   description: string;
 }
 
+export interface PressDossier {
+  title: string;
+  subtitle: string;
+  badge: string;
+  format: string;
+  size: string;
+  pages: string;
+  fileUrl: string;
+  coverImage: string;
+  secondaryCoverImage?: string;
+  description: string;
+  highlights: string[];
+  specs: { label: string; value: string }[];
+}
+
 export interface RiderSpec {
   item: string;
   specification: string;
@@ -477,8 +492,33 @@ export const siteConfig = {
     { name: "FIESTAS PATRONALES POSADAS", city: "Córdoba", category: "Festival" },
   ] as VenueItem[],
 
-  // Presskit (Solo 2 tarjetas oficiales)
+  // Presskit (Dossier Central Oficial)
   presskit: {
+    dossier: {
+      title: "Dossier Oficial de Prensa 2026",
+      subtitle: "DJ TOTOTE · Spain Urban DJ",
+      badge: "DOCUMENTO EXCLUSIVO PROMOTORES & MEDIOS",
+      format: "PDF",
+      size: "1,0 MB",
+      pages: "6 Páginas",
+      fileUrl: "/press/totote-presskit.pdf",
+      coverImage: "/media/presskit-cover.webp",
+      secondaryCoverImage: "/media/presskit-page-2.webp",
+      description: "Dossier corporativo oficial de 6 páginas en alta definición. Reúne trayectoria artística, cifras y métricas auditadas en redes, historial de directos en festivales y salas, eventos propios y rider técnico de cabina.",
+      highlights: [
+        "Biografía artística & evolución musical (Reguetón, Dembow, Urban)",
+        "Métricas e impacto auditado (+42,4K Instagram · +15,8K TikTok)",
+        "Historial de escenarios, festivales y macroeventos",
+        "Proyectos propios: Fiestas BRANDY TTT y Canal La Totoneta",
+        "Rider técnico de cabina (Pioneer DJ) y contacto directo",
+      ],
+      specs: [
+        { label: "FORMATO", value: "PDF Vectorial HD" },
+        { label: "EXTENSIÓN", value: "6 Páginas A4" },
+        { label: "TAMAÑO", value: "1,0 MB" },
+        { label: "ESTADO", value: "Oficial 2026" },
+      ],
+    } as PressDossier,
     downloads: [
       {
         id: "dossier",
@@ -487,14 +527,6 @@ export const siteConfig = {
         size: "1,0 MB",
         fileUrl: "/press/totote-presskit.pdf",
         description: "Dossier oficial 2026: Biografía, cifras auditadas en redes, fotos de directo y datos de contratación.",
-      },
-      {
-        id: "photos",
-        title: "Fotos de Prensa en Alta (ZIP)",
-        format: "ZIP",
-        size: "86,2 MB",
-        fileUrl: "/press/fotos.zip",
-        description: "Pack oficial de fotografías para cartelería, redes y flyers en máxima resolución.",
       },
     ] as PressItem[],
   },
